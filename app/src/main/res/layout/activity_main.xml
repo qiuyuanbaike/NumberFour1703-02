@@ -4,15 +4,16 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.qiuyuanbaike.numberfour1703.ui.MainActivity">
 
-    <!--<TextView-->
-        <!--android:id="@+id/text_one"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_margin="10dp"-->
-        <!--android:text="跳过......"-->
-        <!--android:textColor="#000000"-->
-        <!--android:textSize="16sp" />-->
+    <include layout="@layout/item_text"/>
+
+    <include layout="@layout/ringth_image"
+        android:visibility="invisible"
+        android:id="@+id/menuLaoyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
 </RelativeLayout>

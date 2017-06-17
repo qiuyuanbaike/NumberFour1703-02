@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent;
-                if (true){
+                if (spUtil.isFirst()){
                  intent=new Intent(SplashActivity.this, GuideActivity.class);
                     spUtil.setFirst(false);
                 }else {

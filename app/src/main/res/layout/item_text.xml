@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="#FF6633"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:id="@+id/city_latout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+
+                    android:id="@+id/city_text"
+                    style="@style/text_w"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="广州" />
+
+                <TextView
+                    style="@style/text_w"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="v"
+                    android:textScaleX="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seek_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/seek_image"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/navibar_icon_search" />
+
+                <TextView
+                    android:id="@+id/seek_text"
+                    style="@style/text_B"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:hint="输入商户名、地点" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_text"
+                style="@style/text_w"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/textyuan"
+                android:text="+" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pulltoer_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_home"
+                style="@style/text_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/radio01"
+                android:gravity="center"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/radioButton_tuan"
+                style="@style/text_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio02"
+                android:gravity="center"
+                android:text="闪惠团购" />
+
+            <RadioButton
+                android:id="@+id/radioButton_search"
+                style="@style/text_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio03"
+                android:gravity="center"
+                android:text="发现" />
+
+            <RadioButton
+                android:id="@+id/radioButton_my"
+                style="@style/text_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio04"
+                android:gravity="center"
+                android:text="我的" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
